@@ -200,7 +200,8 @@ a {
     align-content: center;
     justify-content: center;
     padding: 20px;
-    color: var(--main-color)
+    color: var(--main-color);
+    font-size: 1.3rem;
 }
 
 .card {
