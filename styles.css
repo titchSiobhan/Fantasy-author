@@ -1,0 +1,566 @@
+:root {
+    --main-color: #D4AF37;
+    --secondary-color: #F5F1E3;
+    --background: #1B1F3B;
+    --text-color: #333
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+    background-color: var(--background);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hamburger {
+    display: none;
+    font-weight: 900;
+}
+
+h1, h2, a {
+    color: var(--main-color);
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+p {
+    color: var(--text-color);
+    font-family: 'montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.header-nav {
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+
+
+ a:hover {
+    font-weight: 900;
+    font-size: 1.2rem;
+    
+}
+
+.navbar a {
+    display: in-flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    
+}
+
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("Resources/hero.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+  width: 95%;
+ 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 2px var(--main-color);
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+.hero h1 {
+    display: flex;
+   text-shadow: 0 0 5px var(--main-color);
+    
+    padding: 250px ;
+    
+
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 100px;
+    
+}
+
+.newbook img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.newbook-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    margin: 100px 0;
+
+} 
+
+.btn {
+    display: flex;
+    background-color: var(--background);
+    color: var(--main-color);
+    border: solid 2px var(--main-color);
+    padding: 10px 15px;
+    max-width: 120px;
+    justify-content: center;
+    justify-self: center;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    color: var(--background);
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.btn:active {
+    background-color: var(--main-color);
+    color: var(--background);
+    cursor: pointer;
+    transform: translateY(4px);
+    transition: 0.5s;
+}
+
+.about-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 50px 10px;
+}
+
+.about-book img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.quote {
+    
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--main-color)
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 20px;
+
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 100px;
+   
+}
+
+.char-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.char-img {
+    width: 250px;
+    display: none;
+    border-radius: 20px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.footer-nav {
+    
+    justify-content: start;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0 140px;
+
+}
+
+footer a {
+    padding: 5px;
+}
+
+.social {
+   
+    justify-content: end;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0 140px ;
+}
+
+.bio-card {
+    
+    
+    display: flex;
+    gap: 50px;
+    margin: 100px;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 20px;
+    max-height: 200px;
+}
+
+
+.leaf {
+    width: 300px;
+    height: auto;
+   
+}
+h2 {
+    text-align: center;
+} 
+
+/* media query tablet 321 px - 760*/
+ @media screen and (min-width: 321px) and (max-width: 760px ){
+
+    body {
+        font-size: 0.9rem;
+        max-width: 700px;
+        min-width: 300px;
+    }
+    .characters {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        margin: 100px;
+        justify-content: center;
+        width: 95%;
+        justify-self: center; 
+    }
+    
+    .char-about {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .bio-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin: 0;
+        justify-self: center;
+    }
+
+    .bio {
+        margin: 10px;
+        padding: 10px;
+        min-height: 250px;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 10px 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 1000;
+        color: var(--main-color);
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+     .logo-nav {
+        overflow: hidden;
+        background-color: var(--background);
+        position: relative;
+        padding: 5px;
+        margin: 10px 0;
+        align-content: center;
+    }
+    .logo-nav #myLinks{
+        display: none;
+
+    }
+
+    .logo-nav a {
+        padding: 10px;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
+
+    }
+
+    .footer-nav {
+        justify-content: center;
+        margin: 0;
+    }
+    .social {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .logo-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {  
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .newbook-card {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card {
+        padding: 10px;
+        display: flex;
+    }
+    
+    .about-book {
+        margin: 10px;
+    }
+ }
+
+    
+
+ /* phone 320px */
+
+ @media screen and (max-width: 320px) {
+
+    body {
+        max-width: 300px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 1000;
+        color: var(--main-color);
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+     .logo-nav {
+        overflow: hidden;
+        background-color: var(--background);
+        position: relative;
+        padding: 5px;
+        margin: 10px 0;
+        align-content: center;
+        display: flex;
+    }
+    .logo-nav #myLinks{
+        display: none;
+
+    }
+
+    .logo-nav a {
+        padding: 10px;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .hero h1 {
+        padding: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newbook-card {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .footer-nav {
+        justify-content: center;
+        margin: 0;
+    }
+    .social {
+        justify-content: center;
+        margin: 0;
+    }
+    .characters {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .bio-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 50px;
+        padding: 50px 0;
+        
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 5px;
+        max-width: 300px;
+        height: auto;
+
+
+    }
+
+    .about-book {
+        padding: 5px;
+
+    }
+
+    .about-book img {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .card {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .name-logo {
+        padding: 5px;
+    }
+
+   
+ }
